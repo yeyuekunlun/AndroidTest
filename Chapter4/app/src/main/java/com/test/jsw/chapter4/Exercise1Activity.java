@@ -11,11 +11,12 @@ import android.widget.ArrayAdapter;
 public class Exercise1Activity extends LauncherActivity {
 
     String[] names = {"设置程序参数","查看星际兵种"};
-    Class<?>[] clazzs = {};
+    Class<?>[] clazzs = {PreferenceActivity.class,ExpandableListActivityTest.class};
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
+        this.setListAdapter(arrayAdapter);
     }
 
     @Override
