@@ -19,6 +19,7 @@
         <activity android:name=".Exercise1Activity"/>
         <activity android:name=".ExpandableListActivityTest"/>
         <activity android:name=".PreferenceActivity"/>
+        <activity android:name=".EX2MainActivity"/>
     </application>
 
 </manifest>
