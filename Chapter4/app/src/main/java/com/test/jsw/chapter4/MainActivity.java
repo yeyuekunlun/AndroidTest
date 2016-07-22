@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.test.jsw.entity.TestActivity;
+
+
 public class MainActivity extends AppCompatActivity {
 
     Button btn1;
@@ -29,9 +32,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void DoExerciseTwo(View view){
+        Log.d("TEST",EX2MainActivity.class.getName());
+        Log.d("TEST",TestActivity.class.getName());
         Intent intent = new Intent(MainActivity.this,EX2MainActivity.class);
         startActivity(intent);
-        this.finish();
+//        this.finish();
+//        mediaPlayer = new MediaPlayer();
+//        try{
+//            mediaPlayer.setDataSource(getAssets().openFd("").getFileDescriptor());
+//        }catch (Exception e){
+//
+//        }
+    }
+
+    public void StartBrickGame(View view){
+
+    }
+
+    public void PlayAnimBom(View view){
+        Intent intent = new Intent(MainActivity.this,BomActivity.class);
+        startActivity(intent);
+    }
+
+    public void PlayAnimFlower(View view){
+        Intent intent = new Intent(MainActivity.this,FlowerActivity.class);
+        startActivity(intent);
     }
 
 }

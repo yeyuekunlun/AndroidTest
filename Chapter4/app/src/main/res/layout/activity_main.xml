@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,22 +12,36 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/exercise1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
         android:id="@+id/btn_exercise1"
         android:onClick="DoExerciseOne"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="练习二"
-        android:layout_toRightOf="@id/btn_exercise1"
-        android:layout_alignBaseline="@id/btn_exercise1"
         android:id="@+id/btn_exercise2"
         android:onClick="DoExerciseTwo"/>
 
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BrickGame"
+        android:id="@+id/btn_brick"
+        android:onClick="StartBrickGame"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BomTest"
+        android:id="@+id/btn_bom"
+        android:onClick="PlayAnimBom"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BomTest"
+        android:id="@+id/btn_flower"
+        android:onClick="PlayAnimFlower"/>
+</LinearLayout>
