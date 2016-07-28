@@ -22,6 +22,10 @@
         <activity android:name=".EX2MainActivity"/>
         <activity android:name=".BomActivity"/>
         <activity android:name=".FlowerActivity"/>
+        <activity android:name=".GestrueTest"/>
+        <activity android:name=".ServiceTestActivity"/>
+
+        <service android:name=".MyService"/>
     </application>
 
 </manifest>

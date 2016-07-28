@@ -23,7 +23,6 @@ public class FlowerActivity extends Activity {
         setContentView(R.layout.flowe_layout);
 
         final ImageView imageView = (ImageView) findViewById(R.id.iv_flower);
-        Button btn = (Button) findViewById(R.id.btn_bloosm);
 
         final Animation animBloosm = AnimationUtils.loadAnimation(this,R.anim.bloosm);
         final Animation animReverse = AnimationUtils.loadAnimation(this,R.anim.reverse);
@@ -37,18 +36,6 @@ public class FlowerActivity extends Activity {
             }
         };
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                imageView.startAnimation(animBloosm);
-                new Timer().schedule(new TimerTask() {
-                    @Override
-                    public void run() {
-                        handler.sendEmptyMessage(0x123);
-                    }
-                },3500);
-            }
-        });
     }
 
 }

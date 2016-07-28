@@ -58,5 +58,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,FlowerActivity.class);
         startActivity(intent);
     }
+    public void GestureTest(View view){
+        Intent intent = new Intent(MainActivity.this,GestrueTest.class);
+        startActivity(intent);
+    }
+
+    public void ServiceTest(View view){
+        Intent intent = new Intent(MainActivity.this,ServiceTestActivity.class);
+        startActivity(intent);
+    }
 
 }

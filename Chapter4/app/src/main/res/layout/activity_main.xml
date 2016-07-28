@@ -44,4 +44,19 @@
         android:text="BomTest"
         android:id="@+id/btn_flower"
         android:onClick="PlayAnimFlower"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GestureTest"
+        android:id="@+id/btn_gesture_test"
+        android:onClick="GestureTest"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BindServiceTest"
+        android:id="@+id/btn_service"
+        android:onClick="ServiceTest"/>
+
 </LinearLayout>
